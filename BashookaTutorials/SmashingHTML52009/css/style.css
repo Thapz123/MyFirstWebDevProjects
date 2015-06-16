@@ -1,0 +1,297 @@
+/*Global Styles*/
+
+
+body{
+    background: #F5F4EF;
+    font-size:87.5%;
+    font-family: "lato", sans-serif, serif;
+    font-weight: 500;
+    
+}
+
+h1,h2,h3,h4{
+    margin-bottom: 0.3em;
+    font-weight:600;
+
+}
+h1{font-size: 2.5em;}
+h2{font-size: 1.2em;}
+h3{font-size: 1.1em;}
+h4{font-size: 1em;}
+
+#container{
+    width:70%;
+    margin: 0 auto;
+}
+.row{
+    background-color: white;
+    margin-bottom:1em;
+}
+
+/*Header*/
+
+header#main-header{
+    margin:1em 0;
+    
+}
+div#whole-banner{
+    padding-bottom: 1em;
+}
+
+#navbar {
+    background-color: rgb(50,50,50);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 100%;
+}
+
+#navbar li{ 
+    
+    padding: 1% 0;
+    width:15%;
+    text-align: center;
+    display: block;
+    
+        
+    
+    
+}
+#navbar li:first-child{
+    
+    -webkit-border-top-left-radius: 5px;
+    
+    -moz-border-top-left-radius: 5px;
+    
+    border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    
+    -moz-border-bottom-left-radius: 5px;
+    
+    border-bottom-left-radius: 5px;
+    
+}
+#navbar a{
+    text-decoration: none;
+    color: white;
+}
+#navbar li.active, #navbar li:hover{
+    background-color: #C74451;
+    cursor: pointer;
+}
+
+/*Featured Article styles*/
+#featured article, #posts-list article{
+    
+    padding: 2%;
+    
+    
+}
+
+#featured article{
+    display: flex;
+    padding: 2%;
+    
+}
+#featured h2{
+    color:#C74451;
+}
+#feature-text{
+    float: left;
+    order: 1;
+    width: 60%;
+
+}
+#featured figure{
+    order: 2;
+    width:40%;
+    
+    
+}
+#featured figure img{
+    display: block;
+    height: 80%;
+    margin: auto;
+    
+    
+    
+}
+.article-divider{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #F4F4EF;
+    width: 80%;
+    margin: auto;
+}
+/*Article styles*/
+#posts-list article{
+    display: flex;
+    flex-direction: row;
+    
+}
+div.post{
+    width:75%;
+    order: 2;
+    
+}
+footer.post-info{
+    width:20%;
+}
+
+.url{
+
+color: #C74451;
+}
+.post-title{
+   color: #C74451;    
+}
+#contentinfo{
+    width: 90%;
+    padding: 2%;
+    margin: 0 auto;
+    text-align: center;
+}
+/*blogroll and social*/
+#extras{
+    display: flex;
+    padding-bottom: 1%;
+}
+#extras .blogroll{
+    width: 70%;
+    display: inline-block;
+}
+#extras h2{
+      color:#C74451;
+}
+.blogroll-list li{
+    display: inline-block;
+    width: 33%;
+    margin-bottom: 2%;
+    
+}
+.blogroll-list a , #extras .social a{
+    text-decoration: none;
+    color: black;
+}
+.blogroll-list a:hover,#extras .social a:hover{
+    color:#C74451;
+}
+.blogroll-list li:hover{
+    cursor: pointer;
+}
+#extras .social{
+    width: 30%;
+    display: inline-block;
+}
+#extras .social li{
+     margin-bottom: 2%;
+}
+
+.primary a.fn {
+    font-size: 1.2em !important;
+    font-weight: 600 !important;
+    text-decoration: none;
+}
+.primary, #about img{
+    display: inline-block;
+} 
+#about img{
+   height: 50px;
+    margin: auto 0;
+    
+}
+.primary {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: auto 0;
+    
+}
+.bio{
+    
+    margin:auto 2em ;
+}
+#about{
+   display: flex;
+    flex-direction: row;
+}
+
+/*Media Queries*/
+@media (max-width:668px){
+        #navbar ul{
+        display: flex;
+
+        flex-direction: row;
+        height: 100%;
+    }
+
+    #navbar li{ 
+        width: 25%;
+
+        display: inline-block;
+    }
+    div.post, footer.post-info{
+        float: none;
+        width: 90%;
+        margin: auto;
+    }
+    footer.post-info{
+        margin: 5% auto;
+    }
+    #posts-list article{
+        display: block;
+    }
+    
+}
+
+@media (max-width:408px){
+    h1,h2,h3,h4{
+        margin-top: 0.3em;
+    }
+    #navbar ul{
+        display: flex;
+
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #navbar li{ 
+        width: 100%;
+
+        display: block;
+
+    }
+    #feature-text{
+        float:none;
+        margin:auto;
+        width:90%;
+        
+    }
+    #featured article{
+        display: block;
+    }
+    #featured figure{
+        margin:auto;
+    }
+    #featured #hgroup{
+        text-align: center;
+    }
+    
+    div.post, footer.post-info{
+        float: none;
+        width: 90%;
+        margin: auto;
+    }
+    footer.post-info{
+        margin: 5% auto;
+    }
+    #posts-list article{
+        display: block;
+    }
+}
