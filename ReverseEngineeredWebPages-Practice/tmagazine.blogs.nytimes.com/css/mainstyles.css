@@ -1,0 +1,203 @@
+/*
+#f00
+
+*/
+body{
+    font-family: "arial", " helvetica" ,sans-serif
+}
+#big_container{
+    width: 70%;
+    margin: 0 auto;
+}
+li{
+    display: inline-block;
+    margin: 1em 1.3em;
+    
+}
+li:last-child{
+    margin-right: 0;
+    
+}
+li:first-child{
+    margin-left: 0;
+}
+a:link{
+     color:#d20000;
+}
+a:visited{
+    color:#d20000;
+}
+a:hover{
+    color:#f00;
+    cursor:pointer;
+}
+a:active{
+    color:#d20000;
+}
+header.main_header{
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+header.main_header nav ul, header.main_header nav p{
+
+    vertical-align: middle;
+  
+}
+header.main_header nav ul{
+   float: right;
+    width: 88%;
+   line-height: 1em;
+}
+header.main_header img, header.main_header nav{
+    display: inline-block;
+   
+    vertical-align: middle;
+    
+}
+header.main_header img{
+    width:5%%;
+    margin: 0;
+}
+header.main_header nav{
+    border-bottom: 0.1em solid #ddd;
+    width: 94%;
+    
+    
+}
+//
+header.main_header nav ul.navlist{
+    
+    margin-left: auto;
+    margin-right: 0;
+}
+//
+header.main_header nav ul li:first-child{
+    margin-left: 1.2em;
+}
+header.main_header nav ul li{
+    font-weight: 600;
+    font-variant: small-caps;
+    font-size: 1.1em;
+    
+}
+
+header.main_header nav p{
+    font-size: 70%;
+    width:10%;
+    color:  #ddd;
+    padding-top: 1.9em;
+    font-variant: small-caps;
+    float: left;
+}
+
+/*End of header styles*/
+#article_container, #submit_form{
+   
+    vertical-align: top;
+}
+form#submit_form{
+    width:35%;
+    float: right;
+}
+
+section#article_container{
+    width: 60%;
+    margin-right: 5%;
+    float: left;
+    
+   
+}
+
+.article_header h1, .article_header  h3{
+    margin:0  auto;
+    text-align: center;
+    font-weight: 500;
+}
+.article_header h1{
+    font-size: 2em;
+    font-family: "georgia"
+}
+.article_header  h3{
+    font-variant: small-caps;
+    color:#f00;
+}
+.metainfo ul{
+    width: 100%;
+    
+}
+.metainfo ul li {
+        color:#aaa;
+
+    font-size: 80%;
+    width:25%;
+    display: inline-block;
+    
+}
+
+.metainfo ul li:last-child{
+    margin-right: 0 !important;
+}
+figure img{
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+figcaption p{
+    color: #ddd;
+    font-size: 70%;
+}
+figcaption{
+    margin-bottom: 2em;
+    border-bottom: 0.1em solid #ddd;
+    padding-bottom:0.5em;
+    
+}
+.content p, .social_links li{
+font-family: "georgia","times new roman",arial
+}
+
+#main_footer{
+    border-top: 0.1em solid #aaa;
+}
+#main_footer li{
+    font-weight: 600;
+    color:#aaa;
+    font-variant: small-caps;
+        
+}
+.foot_nav{
+    width:80%;
+    display: block;
+    margin:  auto;
+}
+#submit_search{
+    background: #f00;
+    border: 2px solid #f00;
+    border-radius: 5px;
+    color: white;
+    
+}
+#submit_form input{
+    width:80%;
+}
+
+
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
